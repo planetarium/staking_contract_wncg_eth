@@ -7,7 +7,6 @@ require('hardhat-docgen');
 require('solidity-coverage')
 require("dotenv").config({ path: "./.env" })
 require('hardhat-abi-exporter');
-require("./tasks")
 
 module.exports = {
   gasReporter: {
