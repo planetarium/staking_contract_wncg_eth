@@ -1,5 +1,5 @@
 TN:
-SF:/Users/admin/temptemp/staking_contract_wncg_eth/contracts/interfaces/IBalancerGauge.sol
+SF:/Users/admin/tt/staking_contract_wncg_eth/contracts/interfaces/IBalancerGauge.sol
 FNF:0
 FNH:0
 LF:0
@@ -8,7 +8,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/admin/temptemp/staking_contract_wncg_eth/contracts/interfaces/IBalancerMinter.sol
+SF:/Users/admin/tt/staking_contract_wncg_eth/contracts/interfaces/IBalancerMinter.sol
 FNF:0
 FNH:0
 LF:0
@@ -17,7 +17,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/admin/temptemp/staking_contract_wncg_eth/contracts/interfaces/interfaces.sol
+SF:/Users/admin/tt/staking_contract_wncg_eth/contracts/interfaces/interfaces.sol
 FNF:0
 FNH:0
 LF:0
@@ -26,7 +26,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/admin/temptemp/staking_contract_wncg_eth/contracts/staking/BALRewardPool.sol
+SF:/Users/admin/tt/staking_contract_wncg_eth/contracts/staking/BALRewardPool.sol
 FN:53,constructor
 FN:63,totalSupply
 FN:67,balanceOf
@@ -169,7 +169,7 @@ BRF:38
 BRH:29
 end_of_record
 TN:
-SF:/Users/admin/temptemp/staking_contract_wncg_eth/contracts/staking/DepositToken.sol
+SF:/Users/admin/tt/staking_contract_wncg_eth/contracts/staking/DepositToken.sol
 FN:12,constructor
 FN:16,mint
 FN:21,burn
@@ -193,7 +193,7 @@ BRF:4
 BRH:4
 end_of_record
 TN:
-SF:/Users/admin/temptemp/staking_contract_wncg_eth/contracts/staking/StakingRewards.sol
+SF:/Users/admin/tt/staking_contract_wncg_eth/contracts/staking/StakingRewards.sol
 FN:141,initialize
 FN:161,onlyOperator
 FN:176,configBalRewardPool

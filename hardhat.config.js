@@ -8,6 +8,34 @@ require('solidity-coverage')
 require("dotenv").config({ path: "./.env" })
 require('hardhat-abi-exporter');
 
+task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
+  const accounts = await hre.ethers.getSigners();
+
+  for (const account of accounts) {
+    console.log(account.address);
+  }
+});
+
+function getMnemonic(networkName) {
+  if (networkName) {
+    const mnemonic = process.env['MNEMONIC_' + networkName.toUpperCase()]
+    if (mnemonic && mnemonic !== '') {
+      return mnemonic
+    }
+  }
+
+  const mnemonic = process.env.MNEMONIC
+  if (!mnemonic || mnemonic === '') {
+    return 'test test test test test test test test test test test junk'
+  }
+
+  return mnemonic
+}
+
+function accounts(chainKey) {
+  return { mnemonic: getMnemonic(chainKey) }
+}
+
 module.exports = {
   gasReporter: {
     enabled: true,
@@ -33,11 +61,11 @@ module.exports = {
   networks: {
     goerli: {
       url: `https://eth-goerli.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY_GOERLI}`,
-      accounts: [process.env.PRI_KEY1]
+      accounts: accounts(),
     },
     mainnet: {
       url: `https://eth-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY_MAINNET}`,
-      accounts: [process.env.PRI_KEY1]
+      accounts: accounts(),
     }
   },
   etherscan: {
