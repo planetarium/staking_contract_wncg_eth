@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/planetarium/staking_contract_wncg_eth/graph/badge.svg?token=pSH0JsXt3w)](https://codecov.io/gh/planetarium/staking_contract_wncg_eth)
+
 # WNCG Staking Rewards
 
 How to setup dev environment
